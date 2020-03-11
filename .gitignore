@@ -7,9 +7,12 @@
 
 # testing
 /coverage
-/src/firebase.js
+
 # production
 /build
+
+#config
+/config
 
 # misc
 .DS_Store
