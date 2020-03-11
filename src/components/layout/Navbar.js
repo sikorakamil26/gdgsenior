@@ -14,27 +14,36 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+  Container
 } from 'reactstrap';
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-
+// NavItem
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand><Link to="/"><img src={Logo} alt="logo" width="250vw"/></Link></NavbarBrand>
+      <Navbar color="white" light expand="md" sticky={'top'} className="shadow-sm p-3 mb-5 bg-white rounded">
+        <NavbarBrand><Link to="/" className="brand-logo"><img src={Logo} alt="logo" width="250vw"/></Link></NavbarBrand>
+      
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          
+          <Nav className="ml-md-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/components" activeClassName="active">Strona główna</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="/tutorials" activeClassName="active">Samouczek</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="" activeClassName="active">Linki</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="" activeClassName="active">Kontakt</NavLink>
+            </NavItem>
+        
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Options
@@ -53,7 +62,8 @@ const Navigation = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+         
+          
         </Collapse>
       </Navbar>
     </div>

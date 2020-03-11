@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For project to properly communicate with Firebase, you need to add src/confif/firebase.js file with your firebase configuration
+
 
 ## Available Scripts
 
