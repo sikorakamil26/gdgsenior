@@ -10,5 +10,8 @@ const config = {
     appId: "1:894700301228:web:09d07e7f22ed5acede2809"
   };
 
-  const Firebase = firebase.initializeApp(config);
-  export default Firebase;
+  firebase.initializeApp(config);
+  const databaseRef = firebase.database().ref();
+  const storageRef = firebase.storage().ref();
+
+  // export const todosRef = databaseRef.child("todos")

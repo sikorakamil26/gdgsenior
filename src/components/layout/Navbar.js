@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import "../../styles/custom.scss";
 import Logo from '../../assets/gdgSeniorLogo.png';
 import {
   Collapse,
@@ -24,7 +25,7 @@ const Navigation = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand><Link to="/"><img src={Logo} alt="logo" width="250vw"/></Link></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -60,56 +61,3 @@ const Navigation = (props) => {
 }
 
 export default Navigation;
-// const Navbar = () => {
-//     return (
-//       <div className="nav_bar_custom">
-//       <nav className="navbar navbar-expand-lg navbar-light">
-//         <div className="d-flex flex-grow-1">
-//             <span className="w-100 d-lg-none d-block"></span>
-//             <a className="navbar-brand d-none d-lg-inline-block" href="#">
-//               <img src={ Logo } width="300vw"/>
-//             </a>
-//             <a className="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-//             </a>
-//             <div className="w-100 text-right">
-//                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-//                     <span className="navbar-toggler-icon"></span>
-//                 </button>
-//             </div>
-//         </div>
-//         <div className="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-//             <ul id="menu" className="navbar-nav ml-auto flex-nowrap">
-//                 <li className="nav-link m-2 menu-item nav-item">
-//                     <Link class to="/">Strona główna</Link>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link m-2 menu-item">Linki</a>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link m-2 menu-item">O nas</a>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link m-2 menu-item">Samouczek</a>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link m-2 menu-item">Zaproś nas</a>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link m-2 menu-item">Organizatorzy</a>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link m-2 menu-item">Kontakt</a>
-//                 </li>
-//             </ul>
-//         </div>
-//     </nav>
-
-
-//       </div>
-//     )
-
-
-// }
-// export default Navbar;
-
-
