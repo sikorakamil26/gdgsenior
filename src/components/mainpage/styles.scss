@@ -1,0 +1,91 @@
+.CustomForm{
+    text-align: left;
+    padding: 1em;
+    margin: 1em;
+    border: 2px solid #d3d3d3;
+    border-radius: .5em;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-control{
+      border-radius: 0;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+  }
+  
+  .tempImage{
+      border-radius: .5em;
+  }
+
+  .form {
+    padding: 1em;
+  }
+  .formSubHeading{
+      text-align: center;
+  }
+
+  .formHeading{
+    text-align: center;
+  }
+
+  
+  .submitButton {
+    text-align: center;
+  }
+  
+
+
+  .inputLabel{
+    position:absolute;
+    left: 5%;
+    top: 18%;
+    font-size: 20px;
+    font-weight: 200;
+    color: #cecece;
+    transition: all 0.5s ease;
+    pointer-events: none;
+  }
+  
+  input:focus~.inputLabel {
+    display:block;
+    color: black;
+    top: -20px;
+    font-size: 14px;
+  }
+// to specify input type:   input[type=email]:focus~.enter
+  input:focus~.enter {
+    background-color: #0F1F7A;
+    position: absolute;
+    content: ' ';
+    height: 1px;
+    right: 45%;
+    top: 42px;
+    transform: scaleX(5)
+  
+  }
+  
+  .enter{
+    transition: all ease 0.5s;
+    width: 10.1%;
+    transform: scaleX(1)
+  
+  }
+  
+  textarea, input { 
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #cecece;
+    height: 40px;
+    width: 50%;
+  }
+
+  
+
+//   Animations in css
+//   @keyframes App-logo-spin {
+//     from { transform: rotate(0deg); }
+//     to { transform: rotate(360deg); }
+//   }

@@ -12,7 +12,7 @@ const TutorialRow = (props) => {
       <Card>
         <CardImg top width="100%" src={TempImg} alt="Card image cap" />
         <CardBody>
-          <CardTitle>Tutorial 1</CardTitle>
+          <CardTitle>Tutorial 2</CardTitle>
           <CardSubtitle>Jakiś opis</CardSubtitle>
           <CardText>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</CardText>
           <Button>Czytaj dalej</Button>

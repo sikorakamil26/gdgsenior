@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route} from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
+import MainPage from './components/mainpage/MainPage'
 import Tutorials from './components/tutorials/Tutorials'
 
 class App extends Component {
@@ -10,7 +11,8 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Switch>
-            <Route path='/tutorials' component={Tutorials} />
+            <Route exact path='/' component={MainPage} />
+            <Route exact path='/tutorials' component={Tutorials} />
           </Switch>
 
         </div>
