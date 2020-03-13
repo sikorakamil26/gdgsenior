@@ -4,7 +4,7 @@ import {
     FormGroup, Label, Input,
     Button, FormFeedback,
   } from 'reactstrap';
-import './styles.scss'
+import './styles/contactStyle.scss'
 class ContactForm extends Component {
 
     
@@ -54,6 +54,7 @@ class ContactForm extends Component {
                 type="email"
                 name="email"
                 id="exampleEmail"
+                placeholder=" "
                 valid={ this.state.validate.emailState === 'has-success' }
                 invalid={ this.state.validate.emailState === 'has-danger' }
                 onChange={ (e) => {
@@ -76,6 +77,7 @@ class ContactForm extends Component {
                   type="text"
                   name="name"
                   id="name"
+                  placeholder=" "
                 />
                 <Label className="inputLabel">Imię</Label>
               </FormGroup>

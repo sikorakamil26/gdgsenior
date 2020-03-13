@@ -1,15 +1,18 @@
 import React from 'react'
 import ContactForm from './ContactForm'
 import { Container, Row, Col } from 'reactstrap'
-import TempImg from '../../assets/custompagewp.jpg'
+import Navbar from '../layout/Navbar'
+import MainBanner from './MainBanner' 
 
 const MainPage = (props) => {
   return (
-    <Container>          
+    <Container fluid>    
+      <Navbar animated={true} />      
         <Row>
-            <Col sm={{ size: '6'}}> <img src={TempImg} className="tempImage" alt="temp" width="100%"/></Col>
-            <Col sm={{ size: '6'}}><ContactForm /></Col>
+            <MainBanner />
+
         </Row>
+       
     </Container>
   );
 }

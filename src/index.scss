@@ -6,9 +6,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/checkedPattern.png") ;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  padding-top: 100px; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
