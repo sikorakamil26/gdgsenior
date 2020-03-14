@@ -7,7 +7,8 @@
 }
 
 .header{
-    font-size: 60px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .list-wrapper{
@@ -19,6 +20,10 @@
       color: rgb(97, 96, 96);
       font-size: 45px;
       list-style-type: none;
+      li{
+        margin-top: 20px;
+      }
+      
       li:hover{
           color:black; 
       }
@@ -31,8 +36,8 @@
 
     width: 40vw;
     height: 25vw;
-    min-width: 460;
-    min-height: 400;
+    min-width: 460px;
+    min-height: 400px;
     margin: 15vh 0 0 -10vw;
     z-index: 1;
     opacity: 70%;
@@ -40,11 +45,15 @@
 .back-image{
     width: 40vw;
     height: 25vw;
-    min-width: 460;
-    min-height: 400;
+    min-width: 460px;
+    min-height: 400px;
     margin: 5vh 0 0 -25vw ;
     
     background: url('../../../assets/checkedPattern.png');
     
 }
 
+.image-icon{
+    margin: 40px 0 0 30px;
+    height: 100px;
+}
