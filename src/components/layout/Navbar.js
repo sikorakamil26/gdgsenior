@@ -1,25 +1,25 @@
-import React, { useState, Component } from 'react';
-import { Link, NavLink as RRNavLink } from 'react-router-dom';
-import Logo from '../../assets/gdgSeniorLogo.png';
 import {
   Collapse,
-  Navbar,
-  NavbarToggler,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
   Nav,
   NavItem,
   NavLink,
+  Navbar,
+  NavbarToggler,
   UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
+import { Link, NavLink as RRNavLink } from 'react-router-dom';
+import React, { Component, useState } from 'react';
 
+import Logo from '../../assets/gdgSeniorLogo.png';
 
 class Navigation extends Component {
 
   state = {
     isOpen: false,
-    top: 23, 
+    top: 34, 
     left: 2, 
     width: 500,
     padding: 0,
@@ -60,7 +60,7 @@ class Navigation extends Component {
       if(scrollTop < window.screen.height/6){
 
         this.setState({
-          top: this.mapNumberToRange(scrollTop, 0, (window.screen.height /6), 23, 0.5), 
+          top: this.mapNumberToRange(scrollTop, 0, (window.screen.height /6), 34, 0.5), 
           left: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 2, 0), 
           width: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 500, 250),
           padding: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 0, 12),

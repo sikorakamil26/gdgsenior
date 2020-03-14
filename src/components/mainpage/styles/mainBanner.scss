@@ -1,103 +1,96 @@
-.main-banner{
-    display: grid;
-    grid-template-columns: repeat(10,10%);
-    grid-template-rows: repeat(18,5vh);
-    // grid-gap: 5px;
+.main-banner {
+    margin: 10vh 0 15vh 0;
 }
 
-.square-container{
-    grid-column-start: 1;
-    grid-column-end: 8;
-    grid-row-start: 3;
-    grid-row-end: 16;
+.square-container {
     background-color: rgb(245, 246, 248);
-}
-.intro-container{
-    padding: 20vh 30vw 0 3vw;
+    margin-top: 12vh;
+    width: 70vw;
 }
 
-.intro-paragraph{
+.intro-container{
+    margin-top: 10vh;
+}
+
+.image-container {
+    margin: 5vh auto auto -20vw;
+
+    &>img {
+        max-width: 50vw;
+    }
+}
+
+.intro-paragraph {
+    max-width: 40vw;
     // margin-right: 30vw;
     // margin-top: 10vh;
 }
 
-.button-wrapper{
+.button-wrapper {
     margin-top: 50px;
 }
-.image-container{
-    grid-column-start: 6;
-    grid-column-end: 11;
-    grid-row-start: 2;
-    grid-row-end: 13;
-    overflow: hidden;
+
+.image-container:hover {
+    box-shadow: 0 0 10px #ccc;
 }
 
-.image-container:hover{
-
-      box-shadow: 0 0 10px #ccc;
-  }
-
-.image-header{
+.image-header {
     max-height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
     transition: transform 1s;
     filter: grayscale(0);
-
-	transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
-.image-header:hover{
+.image-header:hover {
     transform: scale(1.02);
-	filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
-@media ( max-width: 600px ){
-    .main-banner{
+@media (max-width: 600px) {
+    .main-banner {
         display: grid;
         grid-template-columns: 5px auto 5px;
-        grid-template-rows: repeat(10,10vh);
+        grid-template-rows: repeat(10, 10vh);
         justify-content: center;
         // grid-gap: 5px;
     }
-    
-    .square-container{
+
+    .square-container {
         grid-column: 2;
         grid-row-start: 5;
         grid-row-end: 11;
         background-color: rgb(245, 246, 248);
     }
-    .intro-container{
+
+    .intro-container {
         padding: 10vw 0 0 0;
         justify-content: center;
         text-align: center;
     }
-    
-    .intro-paragraph{
+
+    .intro-paragraph {
         justify-content: center;
         margin: auto;
     }
-    
-    .image-container{
+
+    .image-container {
         grid-column: 2;
         grid-row-start: 1;
         grid-row-end: 5;
         overflow: hidden;
-
     }
-    
-  
-    
-    .image-header{
+
+    .image-header {
         max-height: 100%;
         object-fit: cover;
         transition: transform 1s;
         filter: grayscale(0);
-    
         transition: .3s ease-in-out;
     }
-    
-    .image-header:hover{
+
+    .image-header:hover {
         transform: scale(1.02);
         filter: grayscale(100%);
     }

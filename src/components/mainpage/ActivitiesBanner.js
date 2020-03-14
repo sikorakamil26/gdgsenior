@@ -1,6 +1,7 @@
 import './styles/activityBanner.scss'
 
 import React, { Component } from 'react';
+import { Col, Container, Row } from 'reactstrap'
 
 class ActivitiesBanner extends Component{
 
@@ -26,15 +27,17 @@ class ActivitiesBanner extends Component{
   }
 
     return (
-      <div className='container-fluid main-wrapper' >
+     
+      <div>
+
         <div className='header-wrapper'>
           <h1 className='header'>
-                Czym się zajmujemyfire
+                Czym się zajmujemy
           </h1>
         </div>
          
   
-          <div className='wrapper-grid'>
+         <Container fluid className= 'd-flex main-wrapper'>
             <div className='list-wrapper'>
               <ul>
                 <li onMouseEnter={()=>this.setState({hoverItem: "meet"})}>Spotkania</li>
@@ -54,9 +57,8 @@ class ActivitiesBanner extends Component{
             
             <div className='back-image'></div>
             
-          </div>
-          
-      </div>
+          </Container>
+        </div>
     );
   }
 
