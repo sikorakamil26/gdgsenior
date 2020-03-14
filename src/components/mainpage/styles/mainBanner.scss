@@ -1,15 +1,15 @@
 .main-banner{
     display: grid;
     grid-template-columns: repeat(10,10%);
-    grid-template-rows: repeat(10,10vh) ;
+    grid-template-rows: repeat(18,5vh);
     // grid-gap: 5px;
 }
 
 .square-container{
     grid-column-start: 1;
     grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 16;
     background-color: rgb(245, 246, 248);
 }
 .intro-container{
@@ -27,8 +27,8 @@
 .image-container{
     grid-column-start: 6;
     grid-column-end: 11;
-    grid-row-start: 1;
-    grid-row-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 13;
     overflow: hidden;
 }
 
@@ -64,7 +64,7 @@
     .square-container{
         grid-column: 2;
         grid-row-start: 5;
-        grid-row-end: 10;
+        grid-row-end: 11;
         background-color: rgb(245, 246, 248);
     }
     .intro-container{

@@ -3,6 +3,7 @@ import ContactForm from './ContactForm'
 import { Container, Row, Col } from 'reactstrap'
 import Navbar from '../layout/Navbar'
 import MainBanner from './MainBanner' 
+import ActivitiesBanner from './ActivitiesBanner'
 
 const MainPage = (props) => {
   return (
@@ -14,7 +15,7 @@ const MainPage = (props) => {
         </Row>
 
         <Row>
-          <div style={{height: '1000px'}}/>
+          <ActivitiesBanner />
         </Row>
        
     </Container>

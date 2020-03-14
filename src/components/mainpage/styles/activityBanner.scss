@@ -1,0 +1,49 @@
+.header-wrapper{
+    text-align: center;
+}
+
+.header{
+    font-size: 60px;
+}
+
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(14,5vh) ;
+}
+
+.list-wrapper{
+    grid-column-start:2;
+    grid-column-end:6;
+    grid-row-start:4;
+    grid-row-end: 10;
+
+
+  ul {
+      color: rgb(97, 96, 96);
+      font-size: 45px;
+      list-style-type: none;
+      li:hover{
+          color:black; 
+      }
+      
+  }
+
+}
+
+.front-image{
+    grid-column-start:5;
+    grid-column-end:9;
+    grid-row-start:4;
+    grid-row-end: 14;
+    z-index: 1;
+    opacity: 70%;
+}
+.back-image{
+    background: url('../../../assets/checkedPattern.png');
+    grid-column-start:6;
+    grid-column-end:10;
+    grid-row-start:2;
+    grid-row-end: 12;
+}
+
