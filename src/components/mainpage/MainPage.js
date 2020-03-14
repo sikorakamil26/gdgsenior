@@ -12,6 +12,10 @@ const MainPage = (props) => {
             <MainBanner />
 
         </Row>
+
+        <Row>
+          <div style={{height: '1000px'}}/>
+        </Row>
        
     </Container>
   );

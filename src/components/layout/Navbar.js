@@ -19,9 +19,9 @@ class Navigation extends Component {
 
   state = {
     isOpen: false,
-    top: 10, 
-    left: 20, 
-    width: 60,
+    top: 15, 
+    left: 2, 
+    width: 500,
     padding: 0,
   } 
 
@@ -57,22 +57,22 @@ class Navigation extends Component {
         return;
       }
 
-      if(scrollTop < window.screen.height/4){
+      if(scrollTop < window.screen.height/6){
 
         this.setState({
-          top: this.mapNumberToRange(scrollTop, 0, (window.screen.height /4), 10, 0), 
-          left: this.mapNumberToRange(scrollTop, 0, window.screen.height/4, 20, 0), 
-          width: this.mapNumberToRange(scrollTop, 0, window.screen.height/4, 60, 20),
-          padding: this.mapNumberToRange(scrollTop, 0, window.screen.height/4, 0, 12),
+          top: this.mapNumberToRange(scrollTop, 0, (window.screen.height /6), 15, 0.5), 
+          left: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 2, 0), 
+          width: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 500, 250),
+          padding: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 0, 12),
         })
         // console.log('size: ', this.mapNumberToRange(scrollTop, 0, window.screen.height, 60, 20))
         // console.log('left:', this.mapNumberToRange(scrollTop, 0, window.screen.height, 20, 0))
         // console.log('top:', this.mapNumberToRange(scrollTop, 0, window.screen.height, 25, 0))
       }else if(width !== 20 || left !== 0 || top !== 0 ){
         this.setState({
-          top: 0, 
+          top: 0.5, 
           left: 0, 
-          width: 20,
+          width: 250,
           padding: 12,
         })
       }
@@ -89,9 +89,9 @@ render() {
   let {isOpen, top, left, width, padding} = this.state
 
   if(!this.props.animated){
-      top = 0
+      top = 0.5
       left = 0
-      width = 20
+      width = 250
       padding = 12
   }
   
@@ -99,7 +99,7 @@ render() {
     console.log(window.screen.width)
     top = 0
     left = 0 
-    width = 20
+    width = 250
     padding = 20
   }
 
@@ -107,7 +107,7 @@ render() {
       <div>
         <Navbar color="white" light expand="md" fixed='top' className="shadow-sm p-3 bg-white rounded" >
           <Link to="/" className="brand-logo" style={{position: 'fixed', top: top +'vh', left: left + 'vw', padding: padding + 'px 0 0 ' + padding + 'px'}}>
-            <img src={Logo} alt="logo" style={{width: width + 'vw', minWidth: '200px', minTop: '100px'}} />
+            <img src={Logo} alt="logo" style={{width: width + 'px', minWidth: '250px', minTop: '100px'}} />
             </Link>
         
           <NavbarToggler onClick={()=>this.setState({isOpen: !isOpen})} className="ml-auto" />
@@ -118,7 +118,7 @@ render() {
                 <NavLink exact to="/" activeClassName="active" className="nav-item" tag={RRNavLink}>Strona główna</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink exact to="/tutorialSummary" activeClassName="active" tag={RRNavLink}>Samouczek</NavLink>
+                <NavLink exact to="/tutorialSummary" activeClassName="active" tag={RRNavLink}>Portal Szkoleniowy</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink exact to="/links" activeClassName="active" tag={RRNavLink}>Linki</NavLink>
