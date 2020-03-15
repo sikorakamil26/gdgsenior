@@ -1,6 +1,3 @@
-.main-wrapper{
-    margin-bottom: 10vh;
-}
 
 .header-wrapper{
     text-align: center;
@@ -11,49 +8,112 @@
     font-weight: bold;
 }
 
-.list-wrapper{
-    width: 50vw;
-    padding: 10vh 10vw 10vh 10vw;
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(14,5vh) ;
+}
 
+.list-wrapper{
+    grid-column-start:2;
+    grid-column-end:6;
+    grid-row-start:4;
+    grid-row-end: 10;
 
   ul {
-      color: rgb(97, 96, 96);
+      color: rgb(119, 117, 117);
       font-size: 45px;
       list-style-type: none;
       li{
         margin-top: 20px;
       }
-      
       li:hover{
           color:black; 
       }
-      
   }
-
 }
 
 .front-image{
-
-    width: 40vw;
-    height: 25vw;
-    min-width: 460px;
-    min-height: 400px;
-    margin: 15vh 0 0 -10vw;
-    z-index: 1;
+    grid-column-start:5;
+    grid-column-end:9;
+    grid-row-start:4;
+    grid-row-end: 14;
+    z-index: 10;
     opacity: 70%;
 }
 .back-image{
-    width: 40vw;
-    height: 25vw;
-    min-width: 460px;
-    min-height: 400px;
-    margin: 5vh 0 0 -25vw ;
-    
+    grid-column-start:6;
+    grid-column-end:10;
+    grid-row-start:2;
+    grid-row-end: 12;
     background: url('../../../assets/checkedPattern.png');
-    
 }
 
 .image-icon{
     margin: 40px 0 0 30px;
     height: 100px;
+}
+
+.image-text{
+    padding: 50px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .header{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .wrapper-grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(20,10%) ;
+    }
+    
+    .list-wrapper{
+        grid-column: 1;
+        grid-row-start:2;
+        grid-row-end: 5;
+    
+      ul {
+          color: rgb(119, 117, 117);
+          font-size: 30px;
+          list-style-type: none;
+          li{
+            margin-top: 5px;
+          }
+          
+          li:hover{
+              color:black; 
+          }
+      }
+    
+    }
+    
+    .front-image{
+        grid-column: 1;
+        grid-row: 6;
+        grid-row-end: 13;
+        z-index: 10;
+        opacity: 70%;
+    }
+
+    .back-image{
+        grid-column-start:6;
+        grid-column-end:10;
+        grid-row-start:2;
+        grid-row-end: 12;
+        background: url('../../../assets/checkedPattern.png');
+    }
+    
+    .image-icon{
+        margin: 40px 0 0 30px;
+        height: 100px;
+    }
+    
+    .image-text{
+        padding: 50px;
+        font-size: 18px;
+    }
 }

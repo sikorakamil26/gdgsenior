@@ -19,8 +19,8 @@ class Navigation extends Component {
 
   state = {
     isOpen: false,
-    top: 34, 
-    left: 2, 
+    top: 33, 
+    left: 4, 
     width: 500,
     padding: 0,
   } 
@@ -60,8 +60,8 @@ class Navigation extends Component {
       if(scrollTop < window.screen.height/6){
 
         this.setState({
-          top: this.mapNumberToRange(scrollTop, 0, (window.screen.height /6), 34, 0.5), 
-          left: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 2, 0), 
+          top: this.mapNumberToRange(scrollTop, 0, (window.screen.height /6), 33, 0.5), 
+          left: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 4, 0), 
           width: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 500, 250),
           padding: this.mapNumberToRange(scrollTop, 0, window.screen.height/6, 0, 12),
         })
@@ -105,7 +105,7 @@ render() {
 
   return (
       <div>
-        <Navbar color="white" light expand="md" fixed='top' className="shadow-sm p-3 bg-white rounded" >
+        <Navbar color="white" light expand="md" fixed='top' className="shadow-sm p-3 bg-white" >
           <Link to="/" className="brand-logo" style={{position: 'fixed', top: top +'vh', left: left + 'vw', padding: padding + 'px 0 0 ' + padding + 'px'}}>
             <img src={Logo} alt="logo" style={{width: width + 'px', minWidth: '250px', minTop: '100px'}} />
             </Link>
