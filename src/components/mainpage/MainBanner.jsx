@@ -1,7 +1,4 @@
 import './styles/mainBanner.scss'
-
-import { Container } from 'reactstrap'
-
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 import TempImage from '../../assets/temp/HannahGadsby_2019-embed.jpg'

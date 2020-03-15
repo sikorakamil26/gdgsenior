@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    .nav-items-custom{
+        font-size: 19px;
+        padding: 0 0 0 50px;
+    
+        a:after{
+            display: block;
+            content: '';
+            padding-top: 10px;
+            margin-bottom: -10px;
+            border-bottom: 1px solid #000; 
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+            
+        } 
+        .active:after{
+            transform: scaleX(1);
+        }
+        a:hover:after{
+            transform: scaleX(1);
+        }
+    }
+}

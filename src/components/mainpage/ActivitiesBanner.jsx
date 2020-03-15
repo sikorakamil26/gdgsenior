@@ -1,7 +1,6 @@
 import './styles/activityBanner.scss'
 
 import React, { Component } from 'react';
-import { Container } from 'reactstrap'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import MeetingsIcon from '../../assets/icons/meetingIconBlue.png'

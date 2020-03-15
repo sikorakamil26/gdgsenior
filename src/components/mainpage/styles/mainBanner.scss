@@ -36,10 +36,6 @@
     margin-left: 5vw;
 }
 
-.image-container:hover {
-    box-shadow: 0 0 10px #ccc;
-}
-
 .image-header {
     max-width: 100%;
     object-fit: cover;
@@ -52,13 +48,15 @@
 .image-header:hover {
     transform: scale(1.02);
     filter: grayscale(100%);
+    box-shadow: 0 0 10px #ccc;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1120px) {
     .main-banner {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: repeat(8, 10vh);
+        grid-template-rows: repeat(8, 60px);
         justify-content: center;
 
         padding-bottom: 100px;

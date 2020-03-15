@@ -1,0 +1,78 @@
+// .CustomForm{
+//     text-align: center;
+//     padding: 1em;
+//     margin: 1em;
+//     border: 2px solid #d3d3d3;
+//     border-radius: .5em;
+//     vertical-align: middle;
+//     margin-left: auto;
+//     background-color: white;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//   }
+
+//   .form-control{
+//       border-radius: 0;
+//       border-top: none;
+//       border-right: none;
+//       border-left: none;
+//   }
+  
+//   .tempImage{
+//       border-radius: .5em;
+//   }
+
+//   .form {
+//     padding: 1em;
+//   }
+//   .formSubHeading{
+//       text-align: center;
+//   }
+
+//   .formHeading{
+//     text-align: center;
+//   }
+
+  
+//   .submitButton {
+//     text-align: center;
+//   }
+  
+
+
+//   .inputLabel{
+//     position:absolute;
+//     left: 5%;
+//     top: 15%;
+//     font-size: 20px;
+//     font-weight: 200;
+//     color: #cecece;
+//     transition: all 0.5s ease;
+//     pointer-events: none;
+//   }
+
+//   input:not(:placeholder-shown)~.inputLabel {
+//     display:block;
+//     color: black;
+//     top: -27px;
+//     font-size: 18px;
+//   }
+
+//   input:focus~.inputLabel {
+//     display:block;
+//     color: black;
+//     top: -27px;
+//     font-size: 18px;
+//   }
+// // to specify input type:   input[type=email]:focus~.enter
+  
+//   .col { 
+    
+//   }
+
+  
+
+// //   Animations in css
+// //   @keyframes App-logo-spin {
+// //     from { transform: rotate(0deg); }
+// //     to { transform: rotate(360deg); }
+// //   }

@@ -1,7 +1,7 @@
 import React from 'react'
-import ContactForm from './ContactForm'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row } from 'reactstrap'
 import Navbar from '../layout/Navbar'
+import Footer from '../layout/Footer'
 import MainBanner from './MainBanner' 
 import ActivitiesBanner from './ActivitiesBanner'
 
@@ -11,13 +11,15 @@ const MainPage = (props) => {
       <Navbar animated={true} />      
         <Row>
             <MainBanner />
-
         </Row>
-
         <Row>
           <ActivitiesBanner />
         </Row>
-       
+
+        <Row>
+         <Footer />
+        </Row>
+        
     </Container>
   );
 }

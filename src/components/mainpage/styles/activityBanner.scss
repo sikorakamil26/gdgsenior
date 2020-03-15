@@ -39,7 +39,7 @@
     grid-row-start:4;
     grid-row-end: 14;
     z-index: 10;
-    opacity: 70%;
+    opacity: .8;
 }
 .back-image{
     grid-column-start:6;
@@ -59,7 +59,7 @@
     font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
     .header{
         font-size: 25px;
         font-weight: bold;
@@ -68,7 +68,7 @@
     .wrapper-grid{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: repeat(20,10%) ;
+        grid-template-rows: repeat(20,50px) ;
     }
     
     .list-wrapper{
@@ -93,10 +93,10 @@
     
     .front-image{
         grid-column: 1;
-        grid-row: 6;
-        grid-row-end: 13;
+        grid-row: 7;
+        grid-row-end: 18;
         z-index: 10;
-        opacity: 70%;
+        opacity: .8;
     }
 
     .back-image{
